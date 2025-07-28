@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   D_using_T.v   
+Description :      D Flip Flop using T Flip Flop
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module T_FF(
     input wire T,
     input wire clk,
