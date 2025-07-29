@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   UpOrDown_counter.v   
+Description :      4 Bit Up or Down Counter
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module upordown_counter(
     Clk,
     reset,
