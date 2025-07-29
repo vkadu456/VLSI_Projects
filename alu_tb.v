@@ -1,23 +1,7 @@
 /********************************************************************************************
-Copyright 2019 - Maven Silicon Softech Pvt Ltd. 
- 
-All Rights Reserved.
-
-This source code is an unpublished work belongs to Maven Silicon Softech Pvt Ltd.
-
-It is not to be shared with or used by any third parties who have not enrolled for our paid training 
-
-courses or received any written authorization from Maven Silicon.
-
-
-Webpage     :      www.maven-silicon.com
-
 Filename    :	   alu_tb.v   
-
-Description :      Arithmetic Logic Unit Design Testbench
-
-Author Name :      Susmita
-
+Description :      8 Bit Arithmetic Logic Unit Design Testbench
+Author Name :      Vedant Kadu
 Version     :      1.0
 *********************************************************************************************/
 module alu_tb();
@@ -37,7 +21,7 @@ module alu_tb();
 	     SUB  = 4'b0010, // Subtracts b from a.
 	     DEC  = 4'b0011, // Decrement a by 1.
 	     MUL  = 4'b0100, // Multiply 4 bit numbers a and b.
-	     DIV  = 4'b0101, // Divide a by b.
+	     BUF_B  = 4'b0101, // Buffer for B
 	     SHL  = 4'b0110, // Shift a to left side by 1 bit.
 	     SHR  = 4'b0111, // Shift a to right by 1 bit.
 	     AND  = 4'b1000, // Logical AND operation
@@ -47,7 +31,7 @@ module alu_tb();
 	     NOR  = 4'b1100, // Bitwise NOR
 	     XOR  = 4'b1101, // Bitwise XOR
 	     XNOR = 4'b1110, // Bitwise XNOR
-	     BUF  = 4'b1111; // BUF
+	     BUF_A  = 4'b1111; // BUF for A
 					
    //Internal register for storing the string values
    reg [4*8:0]string_cmd;
@@ -103,7 +87,7 @@ module alu_tb();
 	    SUB    :  string_cmd = "SUB";
 	    DEC    :  string_cmd = "DEC";
 	    MUL    :  string_cmd = "MUL";
-	    DIV    :  string_cmd = "DIV";
+	    BUF_B  :  string_cmd = "BUF_B";
 	    SHL    :  string_cmd = "SHL";
 	    SHR    :  string_cmd = "SHR";
 	    INV    :  string_cmd = "INV";
@@ -113,7 +97,7 @@ module alu_tb();
 	    NOR    :  string_cmd = "NOR";
 	    XOR    :  string_cmd = "XOR";
 	    XNOR   :  string_cmd = "XNOR";
-	    BUF    :  string_cmd = "BUF";
+	    BUF_A  :  string_cmd = "BUF_A";
 	 endcase
       end
 			
