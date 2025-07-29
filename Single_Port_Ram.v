@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	     SINGLE_PORT_RAM.v   
+Description :      SINGLE PORT RAM
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module SINGLE_PORT_RAM #(parameter data_width=8,
                          parameter addr_width=4)
     (
