@@ -1,23 +1,7 @@
-/********************************************************************************************
-Copyright 2019 - Maven Silicon Softech Pvt Ltd. 
-
-All Rights Reserved.
-
-This source code is an unpublished work belongs to Maven Silicon Softech Pvt Ltd.
-
-It is not to be shared with or used by any third parties who have not enrolled for our paid training 
-
-courses or received any written authorization from Maven Silicon.
-
-
-Webpage     :      www.maven-silicon.com
-
+/////////////////////////////////////////////////////////////////////////////////////////////
 Filename    :	   alu.v   
-
-Description :      Arithmetic Logic Unit Design
-
-Author Name :      Susmita
-
+Description :      8 Bit Arithmetic Logic Unit Design
+Author Name :      Vedant Kadu
 Version     :      1.0
 *********************************************************************************************/
 
@@ -31,7 +15,7 @@ module alu(input [7:0]a_in,b_in,
 		 SUB  = 4'b0010, // Subtracts b from a.
 		 DEC  = 4'b0011, // Decrement a by 1.
 		 MUL  = 4'b0100, // Multiply 4 bit numbers a and b.
-		 DIV  = 4'b0101, // Divide a by b.
+		 BUF_B  = 4'b0101, // Buffer for B.
 		 SHL  = 4'b0110, // Shift a to left side by 1 bit.
 		 SHR  = 4'b0111, // Shift a to right by 1 bit.
 		 AND  = 4'b1000, // Logical AND operation
@@ -41,7 +25,7 @@ module alu(input [7:0]a_in,b_in,
 		 NOR  = 4'b1100, // Bitwise NOR
 		 XOR  = 4'b1101, // Bitwise XOR
 		 XNOR = 4'b1110, // Bitwise XNOR
-		 BUF  = 4'b1111; // BUF
+		 BUF_A  = 4'b1111; // BUF for A
 
    //Internal variable used during ALU operation
    reg  [15:0]out;
@@ -58,7 +42,7 @@ module alu(input [7:0]a_in,b_in,
 		SUB   :out = a_in - b_in;
 		DEC   :out = a_in - 1'b1;
 		MUL   :out = a_in * b_in;
-		DIV   :out = a_in / b_in;
+		BUF_B :out = b_in;
 		SHL   :out = a_in << 1;
 		SHR   :out = a_in >> 1;
 		INV   :out = !(a_in);
@@ -68,7 +52,7 @@ module alu(input [7:0]a_in,b_in,
 		NOR   :out = ~(a_in | b_in);
 		XOR   :out = a_in ^ b_in;
 		XNOR  :out = a_in ~^ b_in;
-		BUF   :out = a_in;
+		BUF_A   :out = a_in;
 
 	 endcase
       end
