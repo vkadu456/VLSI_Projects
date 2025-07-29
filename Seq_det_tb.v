@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   seq_det_tb.v   
+Description :      Testbench Code Sequence Detector that detects 101 
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module seq_det_tb();
 		
    //Testbench global variables
