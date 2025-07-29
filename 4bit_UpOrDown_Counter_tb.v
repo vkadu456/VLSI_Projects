@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   counter_tb.v   
+Description :      4 Bit Up or Down Counter Testbench
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module counter_tb;
 
     // Inputs
