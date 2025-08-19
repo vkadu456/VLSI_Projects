@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   can_controller_tb.v   
+Description :      CAN Controller Testbench using verilog
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module can_controller_tb;
     reg clk;
     reg reset;
