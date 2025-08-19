@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   can_controller.v   
+Description :      CAN Controller using verilog
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module can_controller (
     input clk,
     input reset,
