@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   vending_machine_tb.v   
+Description :      Vending Machine Testbench using FSM with return change
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module vending_machine_tb;
 
 	// Inputs
