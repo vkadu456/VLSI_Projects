@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   usb_device_tb.v   
+Description :      USB Device Testbench using verilog
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module usb_device_tb();
 
     reg clk;
