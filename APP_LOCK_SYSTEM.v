@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   APP_LOCK_SYSTEM.v   
+Description :      App Lock System using verilog
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module APP_LOCK_SYSTEM(
     input [3:0] digit1,digit2,digit3,digit4,
     input [3:0] set1,set2,set3,set4,
