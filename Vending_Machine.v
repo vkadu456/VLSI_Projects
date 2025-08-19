@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   vending_machine.v   
+Description :      Vending Machine using FSM with return change
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module vending_machine(
     input clk,
     input reset,
