@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   DUAL_PORT_RAM_TB.v   
+Description :      DualPort RAM Testbench using verilog
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module DUAL_PORT_RAM_TB();
 parameter DATA_WIDTH = 8;
 parameter ADDR_WIDTH = 4;
