@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   BRIDGE.v   
+Description :      AHB APB Bridge
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module BRIDGE (
     input hclk, hresetn, hselapb, hwrite,
     input [1:0] htrans,
