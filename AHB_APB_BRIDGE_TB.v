@@ -1,6 +1,6 @@
 /********************************************************************************************
 Filename    :	   BRIDGE_TB.v   
-Description :      AHB APB Bridge
+Description :      AHB APB Bridge Testbench
 Author Name :      Vedant Kadu
 Version     : 	   1.0
 *********************************************************************************************/
