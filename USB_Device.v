@@ -1,3 +1,9 @@
+/********************************************************************************************
+Filename    :	   usb_device.v   
+Description :      USB Device using verilog
+Author Name :      Vedant Kadu
+Version     : 	   1.0
+*********************************************************************************************/
 module usb_device (
     input wire clk,
     input wire rst,
